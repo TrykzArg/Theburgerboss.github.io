@@ -1,0 +1,144 @@
+.Footer {
+    margin-top: 30%;
+    background-color: black;
+
+    & .footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        & article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                width: 15vh;
+                height: 40%;  
+            }
+        } 
+    }
+
+    & ul {
+        text-align: center;
+        list-style: none;
+        cursor: pointer;
+
+        & li {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 3%;
+            color: hsl(210, 10%, 33%);
+        }
+    }
+
+    & section.redes {
+        margin-top:1vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & figure {
+            display: inline-block;
+            margin: 3% 3%;
+            margin-bottom: 5%;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & a{
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .Footer {
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20vh;
+        margin-bottom: 0;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        background-color: black;
+
+        & .footer-logo{
+            width: 20%;
+            height: 100%;
+            & picture {
+                display: inline-block;;
+                margin-left: 10%;
+                margin-bottom: 0;
+                width: 30%;
+                height: 100%;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }    
+
+
+        & .section{
+            width: 25%;
+            height: 100%;
+            margin-top: 2vw;
+
+
+            & .article {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                flex-wrap: nowrap;
+        
+                & ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    list-style: none;
+                    cursor: pointer;
+                    gap: 4vw;
+
+                    & li {
+                        font-family: 'Bai Jamjuree', sans-serif;
+                        font-weight: 600;
+                        margin-bottom: 5%;
+                        color: #d4bf00;
+                    }
+                }
+            }
+        }
+
+        & section.redes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin:0 2vw 0 0;
+            height: 45%;
+            width: 20%;
+            
+            
+            & figure {
+                margin: 5% 1%;
+                display: inline-block;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

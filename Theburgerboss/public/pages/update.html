@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages-styles/update.css">
+    <title>TBB Update Products</title>
+</head>
+<body>
+    <header class="Header">
+        <nav class="topnav">
+            <picture>
+                <img class="logo"  src="../img/Logo_theburgerboss.png" alt="Logo">
+            </picture>
+            <ul class="nav-links">
+                <li class="link-index"><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li class="link-update"><a href="./contact.html" class="nav-link">Alta</a></li>
+                <li class="link-contact"><a href="./contact.html" class="nav-link">Contacto</a></li>
+                <li class="link-aboutus"><a href="./aboutus.html" class="nav-link">Nosotros</a></li>
+                <li><button class="cart-button"><span id="amount-cart-product">0</span><img src="../icons/cart-shopping-solid.svg" alt=""></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="Main">
+        <h2> Subir Productos </h2>
+        <section>
+            <form action="" class="form" id="form">
+                <!-- Form de la categoria -->
+                <div class="form-group" id="category-group">
+                    <label for="category" class="form-label">Categoria</label>
+                    <select id="subject" name="category" class="form-input-category">
+                        <option disabled selected>Seleccioná una categoría</option>
+                        <option value="Burgers">Burgers</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Veggie">Veggie</option>
+                        <option value="Side dish">Side dish</option>
+                        <option value="Drinks">Drinks</option>
+                        <option value="Salads">Salads</option>
+                      </select>
+                    </div>
+                    <p class="form-error-warning">Este campo es obligatorio</p>
+                </div>
+                <!-- Form del nombre -->
+                <div class="form-group " id="name-group">
+                    <label for="name" class="form-label">Nombre</label>
+                    <div class="div-form-input">
+                        <input type="text" class="form-input" name="name" id="name" placeholder="Nombre del producto">
+                       <i class="form-validator-state fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="form-error-warning">El Nombre tiene que ser de 4 a 16 digitos y solo puede contener letras</p>
+                </div>
+                <!-- Form de la descripcion -->
+                <div class="form-group" id="description-group">
+                    <label for="description" class="form-label">Descripcion</label>
+                    <div class="div-form-input">
+                        <input type="text" class="form-input" name="description" id="description" placeholder="Descripcion del producto">
+                        <i class="form-validator-state fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="form-error-warning">La descripcion es obligatoria y solo puede contener letras, numeros y guiones medio</p>
+                </div>
+                <!-- Form del precio -->
+                <div class="form-group" id="price-group">
+                    <label for="price" class="form-label">Precio en pesos</label>
+                    <div class="div-form-input">
+                        <input type="number" class="form-input"  name="price" id="price" placeholder="Precio del producto">
+                        <i class="form-validator-state fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="form-error-warning">Este campo es obligatorio y no puede contener mas de 4 numeros</p>
+                </div>  
+                <!-- Form de la imagen -->
+                <div class="form-group" id="img-group">
+                    <label for="image" class="form-label">Imagen</label>
+                    <div class="div-form-input">
+                        <input type="file" class="form-input" name="img" id="img" accept="image/*">
+                        <i class="form-validator-state fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="form-error-warning">Este campo es obligatorio</p>
+                    <p class="form-error-warning error-format-img" id="error-img">Formato de imagen no valido</p>
+                </div>
+                <!-- Form del warning -->
+                <div class="form-warning" id="form-warning">
+                    <p><img src="../icons/icon-warning.svg" alt=""><b>Erorr:</b> Por favor rellene el formulario correctamente.</p>
+                </div>
+
+                <div class="form-group form-group-sumbit" id="sumbit-group">
+                    <button type="submit" class="button-submit" id="submit">Subir Producto</button>
+                    <p class="form-msj-successfully" id="form-msj-successfully">Producto cargado correctamente!</p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="Footer">
+        <section class="footer-logo">
+            <article>
+                <picture>
+                    <img src="../img/Logo_theburgerboss.png" alt="Logo">
+                </picture>
+            </article>
+        </section>
+
+        <section class="section">
+            <article class="article">
+                <ul>
+                    <li>FAQs</li>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="redes">
+                <figure><a target="_blank" href="https://www.instagram.com/the.burgerboss/"><img src="../icons/icon-instagram.svg" alt=""></a></figure>
+                <figure><a target="_blank" href="https://www.facebook.com/gurza.ind?mibextid=LQQJ4d"><img src="../icons/icon-facebook.svg" alt=""></a></figure>
+                <figure> <a target="_blank" href="https://wa.me/541122399426?text=Hola, quiero hacer un pedido!"><img src="../icons/whatsapp.svg" alt=""></a></figure>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/1123d24c6c.js" crossorigin="anonymous"></script>
+    <script src="../../scr/update.js"></script>
+</body>
+</html>
+
+<!-- <script src="C:\Users\gabriel\Desktop\Bootcamp\Proyecto_Integrador\Theburgerboss\scr\update.js"></script> -->

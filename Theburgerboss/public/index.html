@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;600;800&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>The Burger Boss</title>
+</head>
+<body>
+    <header class="Header">
+        <nav class="topnav">
+            <picture>
+                <img class="logo"  src="./img/Logo_theburgerboss.png" alt="Logo">
+            </picture>
+            <div class="search">
+                <div class="src-icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search Food" id="mysearch">
+                </div>
+                <span class="clear"></span> 
+            </div>
+            <ul class="nav-links">
+                <li class="link-index"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="link-update"><a href="./pages/update.html" class="nav-link">Alta</a></li>
+                <li class="link-contact"><a href="./pages/contact.html" class="nav-link">Contacto</a></li>
+                <li class="link-aboutus"><a href="./pages/aboutus.html" class="nav-link">Nosotros</a></li>
+                <li><button class="cart-button"><span id="amount-cart-product">0</span><img src="./icons/cart-shopping-solid.svg" alt=""></button></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="Aside">
+        <nav class="buttons-nav">
+            <ul class="button-list">
+                <li>
+                    <button id="all-products-button"
+                    class="category-button">All Products</button>
+                </li>   
+                <li>
+                    <button id="Burgers" class="category-button
+                    ">Burgers</button>
+                </li>
+                <li>
+                    <button id="Chicken" class="category-button
+                    ">Chicken</button>
+                </li>
+                <li>
+                    <button id="Veggie" class="category-button
+                    ">Veggie</button>
+                </li>
+                <li>
+                    <button id="Sidedish" class="category-button
+                    ">Side dish</button>
+                </li>
+                <li>
+                    <button id="Drinks" class="category-button
+                    ">Drinks</button>
+                </li>
+                <li>
+                    <button id="Salads" class="category-button
+                    " >Salads</button>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="Main">
+        <section id="container-products" class="container">
+        </section>
+    </main>
+    <footer class="Footer">
+        <section class="footer-logo">
+            <article>
+                <picture>
+                    <img src="./img/Logo_theburgerboss.png" alt="Logo">
+                </picture>
+            </article>
+        </section>
+
+        <section class="section">
+            <article class="article">
+                <ul>
+                    <li>FAQs</li>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="redes">
+                <figure><a target="_blank" href="https://www.instagram.com/the.burgerboss/"><img src="./icons/icon-instagram.svg" alt=""></a></figure>
+                <figure><a target="_blank" href="https://www.facebook.com/gurza.ind?mibextid=LQQJ4d"><img src="./icons/icon-facebook.svg" alt=""></a></figure>
+                <figure> <a target="_blank" href="https://wa.me/541122399426?text=Hola, quiero hacer un pedido!"><img src="./icons/whatsapp.svg" alt=""></a></figure>
+        </section>
+    </footer>
+    <script src="../scr/index.js"></script>
+</body>
+</html>

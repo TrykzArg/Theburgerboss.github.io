@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages-styles/contact.css">
+    <title>TBB Update Products</title>
+</head>
+<body>
+    <header class="Header">
+        <nav class="topnav">
+            <picture>
+                <img class="logo"  src="../img/Logo_theburgerboss.png" alt="Logo">
+            </picture>
+            <ul class="nav-links">
+                <li class="link-index"><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li class="link-update"><a href="./update.html" class="nav-link">Alta</a></li>
+                <li class="link-contact"><a href="./contact.html" class="nav-link">Contacto</a></li>
+                <li class="link-aboutus"><a href="./aboutus.html" class="nav-link">Nosotros</a></li>
+                <li><a href="./pages/carrito.html" class="nav-link"><span id="amount-cart-product">0</span><img src="../icons/cart-shopping-solid.svg" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="Main">
+        <section class="section">
+            <h2 id="contact"> Contactanos </h2>
+            <div class="redes">
+                <a class="instagram" target="_blank" href="https://www.instagram.com/the.burgerboss/"><i class="fa-brands fa-instagram fa-xl" style="color: #d4bf00;"></i></a>
+                <a class="facebook" target="_blank" href="https://www.facebook.com/gurza.ind"><i class="fa-brands fa-facebook fa-xl" style="color: #d4bf00;"></i></a>
+                <a class="mail" href="#contact"> <i class="fa-solid fa-envelope fa-xl" style="color: #d4bf00;"></i></a>
+                <a class="wpp" href="#"><i class="fa-brands fa-whatsapp fa-xl" style="color: #d4bf00;"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="forms">
+            <form action="" class="form" id="form">
+                <!-- Form del nombre -->
+                <div class="form-group " id="name-group">
+                    <label for="name" class="form-label">Nombre</label>
+                    <div class="div-form-input">
+                        <input type="text" class="form-input" name="name" id="name" placeholder="Nombre">
+                       <i class="form-validator-state fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="form-error-warning">El Nombre tiene que ser de 3 a 16 digitos y solo puede contener letras</p>
+                </div>
+
+                <!-- Form del nombre -->
+                <div class="form-group " id="lastname-group">
+                    <label for="lastname" class="form-label">Nombre</label>
+                    <div class="div-form-input">
+                        <input type="text" class="form-input" name="lastname" id="lastname" placeholder="Apellido">
+                       <i class="form-validator-state fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="form-error-warning">El Apellido tiene que ser de 2 a 16 digitos y solo puede contener letras</p>
+                </div>
+                <!-- Form de la gmail -->
+                <div class="form-group" id="mail-group">
+                    <label for="mail" class="form-label">Mail</label>
+                    <div class="div-form-input">
+                        <input type="text" class="form-input" name="mail" id="mail" placeholder="EJ: pedro41@gmail.com">
+                        <i class="form-validator-state fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="form-error-warning">El Mail es obligatorio y solo puede contener letras, numeros, . (punto), _ (guion bajo)</p>
+                </div>
+                <!-- Form del Mensaje -->
+                <div class="form-group" id="msg-group">
+                    <label for="msg" class="form-label">Mensaje</label>
+                    <div class="div-form-input">
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Mensaje" class="form-input"></textarea>
+                        <i class="form-validator-state fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="form-error-warning">El menseaje tiene que tener contenido</p>
+                </div>
+                <!-- Form del warning -->
+                <div class="form-warning" id="form-warning">
+                    <p><img src="../icons/icon-warning.svg" alt=""><b>Erorr:</b> Por favor rellene el formulario correctamente.</p>
+                </div>
+
+                <div class="form-group form-group-sumbit" id="sumbit-group">
+                    <button type="submit" class="button-submit" id="submit">Enviar</button>
+                    <p class="form-msj-successfully" id="form-msj-successfully">Producto cargado correctamente!</p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="Footer">
+        <section class="footer-logo">
+            <article>
+                <picture>
+                    <img src="../img/Logo_theburgerboss.png" alt="Logo">
+                </picture>
+            </article>
+        </section>
+
+        <section class="section">
+            <article class="article">
+                <ul>
+                    <li>FAQs</li>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="redes">
+                <figure><a target="_blank" href="https://www.instagram.com/the.burgerboss/"><img src="../icons/icon-instagram.svg" alt=""></a></figure>
+                <figure><a target="_blank" href="https://www.facebook.com/gurza.ind?mibextid=LQQJ4d"><img src="../icons/icon-facebook.svg" alt=""></a></figure>
+                <figure> <a target="_blank" href="https://wa.me/541122399426?text=Hola, quiero hacer un pedido!"><img src="../icons/whatsapp.svg" alt=""></a></figure>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/1123d24c6c.js" crossorigin="anonymous"></script>
+    <script src="../../scr/contact.js"></script>
+</body>
+</html>

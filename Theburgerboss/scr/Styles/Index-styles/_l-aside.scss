@@ -1,0 +1,60 @@
+aside{
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & ul{
+        background-color: black;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        border-radius: .2rem;
+
+        & li{
+
+            font-family: 'Open Sans', sans-serif;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+
+            & button{
+                background-color: transparent;
+                border: none;
+                color: #d4bf00;
+                font-size: 1.5rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                    color: #ffffff;
+                }
+
+
+            }
+
+            & .category-button.active{
+                color: #ffffff;
+            }
+            
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    aside{
+        & ul{
+            display:none;
+        }
+    }
+}
